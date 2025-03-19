@@ -6,7 +6,7 @@
 # node main.js
 
 # パイプでデータを渡す
-echo "1 2 3\n4 5 6\n7 8 9" | node main.js
+echo -n "1 2 3\n4 5 6\n7 8 9" | node main.js
 # テストデータが入っているファイルパスで渡す。
 node main.js ./data/3x3.tsv
 # フォルダパスで渡す。フォルダ内に入っているテストデータをまとめてテストする
