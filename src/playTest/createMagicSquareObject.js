@@ -3,7 +3,7 @@
  *
  */
 const createMagicSquareObject = (testData = "") => {
-	const rows = testData.split("\n").map((row) => {
+	const rows = testData.trim().split("\n").map((row) => {
 		const trimRow = row.trim();
 		return trimRow.split(/\s+/g)
 	});
